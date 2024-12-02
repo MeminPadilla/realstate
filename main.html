@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mafer, tu asesora inmobiliaria certificada en México. Especialista en propiedades en el Bajío.">
+    <meta name="keywords" content="bienes raíces, inmobiliaria, Irapuato, Guanajuato, Bajío, propiedades">
     <title>Conoce a Mafer | Tu Asesora Inmobiliaria</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #6B4E71;
@@ -38,6 +42,19 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             border-radius: 15px;
             overflow: hidden;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+        }
+        
+        .video-container img,
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         .about-section {
@@ -103,6 +120,16 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
         }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .feature-card {
+                margin: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -110,7 +137,6 @@
         <div class="container">
             <h2>Descubre Mi Pasión por el Real Estate</h2>
             <div class="video-container">
-                <!-- Placeholder para el video de Mafer -->
                 <img src="/api/placeholder/800/450" alt="Video presentación Mafer">
             </div>
         </div>
@@ -152,7 +178,5 @@
             <a href="captura.html" class="cta-button">Agendar Consulta Gratuita →</a>
         </div>
     </div>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </body>
 </html>
