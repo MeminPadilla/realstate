@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conoce a tu Asesora Inmobiliaria</title>
+    <style>
+        :root {
+            --primary: #2C3E50;
+            --secondary: #E74C3C;
+            --accent: #3498DB;
+            --light: #ECF0F1;
+        }
+        
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .video-section {
+            background: var(--light);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .specialties {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 0;
+        }
+        
+        .specialty-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .specialty-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .cta-section {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .cta-button {
+            background: var(--secondary);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="video-section">
+        <div class="container">
+            <h2>Mi Historia en el Sector Inmobiliario</h2>
+            <div class="video-container">
+                <!-- Placeholder para el video -->
+                <img src="/api/placeholder/800/450" alt="Video presentación">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="specialties">
+            <div class="specialty-card">
+                <h3>Fotografía Profesional</h3>
+                <p>Capturo la esencia de cada propiedad con fotos profesionales que destacan sus mejores características.</p>
+            </div>
+            <div class="specialty-card">
+                <h3>Asesoría Contable</h3>
+                <p>Te ayudo a entender los aspectos fiscales y financieros de tu inversión inmobiliaria.</p>
+            </div>
+            <div class="specialty-card">
+                <h3>Gestión Legal</h3>
+                <p>Manejo profesional de contratos y documentación con background en recursos humanos.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cta-section">
+        <div class="container">
+            <h2>¿Listo para encontrar tu propiedad ideal?</h2>
+            <p>Agenda una consulta personalizada conmigo</p>
+            <a href="captura.html" class="cta-button">Agendar Consulta</a>
+        </div>
+    </div>
+</body>
+</html>
