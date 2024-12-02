@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda tu Consulta</title>
+    <title>Agenda tu Consulta con Mafer</title>
     <style>
         :root {
-            --primary: #2C3E50;
-            --secondary: #E74C3C;
-            --accent: #3498DB;
-            --light: #ECF0F1;
+            --primary: #6B4E71;
+            --secondary: #FF69B4;
+            --accent: #4A90E2;
+            --light: #F5F5F5;
+            --dark: #2C3E50;
         }
         
         body {
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -25,8 +26,8 @@
             margin: 4rem auto;
             padding: 2rem;
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         
         .form-group {
@@ -37,14 +38,22 @@
             display: block;
             margin-bottom: 0.5rem;
             color: var(--primary);
+            font-weight: 600;
         }
         
         input, select, textarea {
             width: 100%;
             padding: 0.8rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            border: 2px solid rgba(107, 78, 113, 0.2);
+            border-radius: 10px;
             font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
         }
         
         .submit-button {
@@ -52,21 +61,32 @@
             color: white;
             padding: 1rem 2rem;
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
             font-size: 1.2rem;
             cursor: pointer;
             width: 100%;
             transition: all 0.3s;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
         }
         
         .submit-button:hover {
-            background: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
+        }
+
+        .privacy-notice {
+            font-size: 0.8rem;
+            color: #666;
+            text-align: center;
+            margin-top: 1rem;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Agenda tu Consulta Personalizada</h2>
+        <h2>Agenda tu Consulta Personalizada con Mafer</h2>
         <form action="thanks.html">
             <div class="form-group">
                 <label for="nombre">Nombre Completo</label>
@@ -79,29 +99,30 @@
             </div>
             
             <div class="form-group">
-                <label for="telefono">Teléfono</label>
+                <label for="telefono">WhatsApp</label>
                 <input type="tel" id="telefono" name="telefono" required>
             </div>
             
             <div class="form-group">
-                <label for="tipo-propiedad">Tipo de Propiedad que Buscas</label>
+                <label for="tipo-propiedad">¿Qué tipo de propiedad te interesa?</label>
                 <select id="tipo-propiedad" name="tipo-propiedad" required>
                     <option value="">Selecciona una opción</option>
-                    <option value="casa">Casa</option>
+                    <option value="casa">Casa Habitación</option>
                     <option value="departamento">Departamento</option>
                     <option value="terreno">Terreno</option>
-                    <option value="bodega">Bodega</option>
-                    <option value="comercial">Local Comercial</option>
+                    <option value="bodega">Bodega/Nave Industrial</option>
+                    <option value="inversion">Propiedad para Inversión</option>
                 </select>
             </div>
             
             <div class="form-group">
-                <label for="mensaje">Mensaje Adicional</label>
-                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                <label for="zona">Zona de Interés</label>
+                <select id="zona" name="zona" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="irapuato">Irapuato</option>
+                    <option value="guanajuato">Guanajuato Capital</option>
+                    <option value="leon">León</option>
+                    <option value="celaya">Celaya</option>
+                    <option value="otra">Otra Ciudad</option>
+                </select>
             </div>
-            
-            <button type="submit" class="submit-button">Enviar Consulta</button>
-        </form>
-    </div>
-</body>
-</html>
