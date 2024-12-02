@@ -3,65 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Consulta</title>
+    <title>Consulta</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #a3c4d3; /* Azul suave */
-            color: #333333;
             margin: 0;
             padding: 0;
+            background-color: #f4f8fb;
+            color: #333;
             text-align: center;
         }
+
         header {
-            background-color: #4c8c7d; /* Verde esmeralda */
-            padding: 50px 0;
+            padding: 20px;
+            background-color: #e8f4f2;
+            border-bottom: 2px solid #ddd;
         }
+
         h1 {
-            font-size: 2.5em;
-            margin: 0;
+            color: #4c956c;
         }
-        .form-container {
+
+        form {
+            max-width: 500px;
             margin: 50px auto;
-            width: 60%;
-            background-color: #ffffff;
-            padding: 30px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
+
         input, textarea {
             width: 100%;
-            padding: 10px;
             margin: 10px 0;
-            border-radius: 5px;
+            padding: 10px;
             border: 1px solid #ccc;
-        }
-        .cta-button {
-            background-color: #f1c40f; /* Dorado */
-            padding: 15px 30px;
-            color: #ffffff;
-            font-size: 1.5em;
-            text-decoration: none;
             border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .cta-button {
+            background-color: #4c956c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .cta-button:hover {
+            background-color: #3b7a56;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Consulta Personalizada</h1>
+        <p>Déjanos tus datos para ayudarte a encontrar la propiedad ideal.</p>
+    </header>
 
-<header>
-    <h1>¡Gracias por confiar en mi experiencia!</h1>
-</header>
-
-<section>
-    <h2>Rellena el siguiente formulario para solicitar una consulta personalizada.</h2>
-    <div class="form-container">
-        <form action="/submit-form" method="POST">
-            <input type="text" name="name" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu correo electrónico" required>
-            <textarea name="message" placeholder="Cuéntame un poco sobre lo que buscas" required></textarea>
-            <button type="submit" class="cta-button">Enviar solicitud</button>
-        </form>
-    </div>
-</section>
-
+    <form action="https://hook.make.com/YOUR_WEBHOOK_URL" method="POST">
+        <input type="text" name="name" placeholder="Tu nombre completo" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <input type="tel" name="phone" placeholder="Tu teléfono" required>
+        <textarea name="message" placeholder="Cuéntame un poco sobre lo que buscas" required></textarea>
+        <button type="submit" class="cta-button">Enviar solicitud</button>
+    </form>
 </body>
 </html>
