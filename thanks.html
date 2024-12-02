@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gracias</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f8fb;
-            color: #333;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracias por Registrarte</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('thanks_background.jpg'); /* Ruta de la imagen */
+      background-size: cover; /* La imagen cubre todo el fondo */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita que se repita */
+      height: 100vh; /* Altura completa de la ventana */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff; /* Color del texto para resaltar sobre la imagen */
+      text-align: center;
+    }
 
-        h1 {
-            color: #4c956c;
-            margin-bottom: 20px;
-        }
+    .content-container {
+      background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente detrás del texto */
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
 
-        a {
-            background-color: #4c956c;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1rem;
-        }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
 
-        a:hover {
-            background-color: #3b7a56;
-        }
-    </style>
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      color: #fff;
+      text-decoration: none;
+      background-color: #4CAF50;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-    <h1>¡Gracias por tu consulta!</h1>
-    <p>Nos pondremos en contacto contigo pronto para ayudarte a encontrar tu hogar ideal.</p>
-    <a href="index.html">Volver al inicio</a>
+  <div class="content-container">
+    <h1>¡Gracias por Registrarte!</h1>
+    <p>Tu información ha sido recibida exitosamente. Pronto nos pondremos en contacto contigo.</p>
+    <a href="index.html">Volver al Inicio</a>
+  </div>
 </body>
 </html>
