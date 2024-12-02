@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mafer | Tu Asesora Inmobiliaria de Confianza</title>
+    <meta name="description" content="Mafer, tu asesora inmobiliaria certificada en México. Especialista en propiedades en el Bajío.">
+    <meta name="keywords" content="bienes raíces, inmobiliaria, Irapuato, Guanajuato, Bajío, propiedades">
+    <title>Conoce a Mafer | Tu Asesora Inmobiliaria</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Mafer",
+        "url": "your_website_url",
+        "logo": "your_logo_url",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+52-123-456-7890",
+            "contactType": "Customer Service"
+        }
+    }
+    </script>
     <style>
         :root {
-            --primary: #6B4E71; /* Tono morado suave y profesional */
-            --secondary: #FF69B4; /* Rosa para destacar CTAs */
-            --accent: #4A90E2; /* Azul para elementos secundarios */
+            --primary: #6B4E71;
+            --secondary: #FF69B4;
+            --accent: #4A90E2;
             --light: #F5F5F5;
             --dark: #2C3E50;
         }
@@ -20,20 +38,81 @@
             line-height: 1.6;
         }
         
-        .hero {
-            background: linear-gradient(rgba(107, 78, 113, 0.8), rgba(107, 78, 113, 0.8)), 
-                        url('/api/placeholder/1920/1080') center/cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
         }
         
-        .hero-content {
+        .video-section {
+            background: var(--light);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .video-container {
             max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .about-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
             padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border: 1px solid rgba(107, 78, 113, 0.1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .testimonials {
+            background: var(--light);
+            padding: 4rem 0;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem auto;
+            max-width: 600px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .cta-section {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
         }
         
         .cta-button {
@@ -47,7 +126,6 @@
             transition: all 0.3s;
             text-decoration: none;
             display: inline-block;
-            margin-top: 2rem;
             box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
         }
         
@@ -55,50 +133,68 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
         }
-        
-        .hook-text {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            font-weight: bold;
-        }
-        
-        .subhook {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            color: var(--light);
-        }
 
-        .badges {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .feature-card {
+                margin: 1rem;
+            }
 
-        .badge {
-            background: rgba(255,255,255,0.1);
-            padding: 0.5rem 1rem;
-            border-radius: 15px;
-            font-size: 0.9rem;
+            .cta-button {
+                padding: 1.5rem 2.5rem;
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <div class="hero-content">
-            <h1 class="hook-text">Encuentra tu hogar ideal con la guía perfecta</h1>
-            <p class="subhook">Soy Mafer, tu asesora inmobiliaria certificada en México, 
-            especializada en ayudarte a tomar la mejor decisión para tu futuro</p>
-            <div class="badges">
-                <span class="badge">Certificada a Nivel Federal</span>
-                <span class="badge">Especialista en Bajío</span>
-                <span class="badge">Inversiones Inteligentes</span>
+    <div class="video-section">
+        <div class="container">
+            <h2>Descubre Mi Pasión por el Real Estate</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <a href="main.html" class="cta-button">Descubre Cómo Puedo Ayudarte →</a>
         </div>
     </div>
-
-    <!-- Script para cargar Montserrat desde Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <div class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="feature-card">
+                    <h3>Experiencia Certificada</h3>
+                    <p>Agente inmobiliaria certificada a nivel federal en México, especializada en propiedades residenciales y comerciales.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Conocimiento Local</h3>
+                    <p>Experta en el mercado del Bajío, especialmente en Irapuato y zonas aledañas, con conexiones en todo México.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Servicio Integral</h3>
+                    <p>Te acompaño en todo el proceso, desde la búsqueda hasta el cierre, asegurando una experiencia sin complicaciones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="testimonials">
+        <div class="container">
+            <h2>Lo Que Dicen Mis Clientes</h2>
+            <div class="testimonial-card">
+                <p>"Mafer nos ayudó a encontrar nuestra casa ideal. Su atención al detalle y profesionalismo hicieron toda la diferencia."</p>
+                <strong>- Familia González</strong>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cta-section">
+        <div class="container">
+            <h2>¿Listo para encontrar tu propiedad ideal?</h2>
+            <p>Agenda una consulta personalizada conmigo</p>
+            <a href="captura.html" class="cta-button">Agendar Consulta Gratuita →</a>
+        </div>
+    </div>
 </body>
 </html>
