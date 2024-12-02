@@ -3,49 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VSL - Guía Experta para Comprar Casa</title>
+    <title>Asesoría Inmobiliaria</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #a3c4d3; /* Azul suave */
-            color: #ffffff;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f8fb;
+            color: #333;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?real-estate') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
-        header {
-            background-color: #4c8c7d; /* Verde esmeralda */
-            padding: 50px 0;
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        p {
-            font-size: 1.2em;
-        }
+
         .cta-button {
-            background-color: #f1c40f; /* Dorado */
+            background-color: #4c956c;
+            color: white;
+            border: none;
             padding: 15px 30px;
-            color: #ffffff;
-            font-size: 1.5em;
-            text-decoration: none;
+            font-size: 1.2rem;
+            cursor: pointer;
             border-radius: 5px;
-            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #3b7a56;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>¿Sabías que el 60% de las personas que compran una casa se arrepienten de no haber tenido la guía correcta?</h1>
-    <p>La mayoría de las veces, el problema no es la propiedad, sino la falta de información y asesoramiento experto.</p>
-</header>
-
-<section>
-    <h2>¡No cometas el mismo error! Sigue viendo para obtener la guía experta que necesitas para una compra segura.</h2>
-    <a href="#consultation" class="cta-button">Ver más y obtener mi guía</a>
-</section>
-
+    <div class="hero">
+        <h1>¿Sabías que el 60% de las personas se arrepienten de su compra?</h1>
+        <p>La mayoría de las veces, el problema no es la propiedad, sino la falta de información y asesoramiento experto.</p>
+        <a href="main.html" class="cta-button">Descubre cómo puedo ayudarte</a>
+    </div>
 </body>
 </html>
