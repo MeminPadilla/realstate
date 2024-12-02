@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conoce a tu Asesora Inmobiliaria</title>
+    <title>Conoce a Mafer | Tu Asesora Inmobiliaria</title>
     <style>
         :root {
-            --primary: #2C3E50;
-            --secondary: #E74C3C;
-            --accent: #3498DB;
-            --light: #ECF0F1;
+            --primary: #6B4E71;
+            --secondary: #FF69B4;
+            --accent: #4A90E2;
+            --light: #F5F5F5;
+            --dark: #2C3E50;
         }
         
         body {
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -31,23 +32,50 @@
             text-align: center;
         }
         
-        .specialties {
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .about-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .about-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border: 1px solid rgba(107, 78, 113, 0.1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .testimonials {
+            background: var(--light);
             padding: 4rem 0;
         }
         
-        .specialty-card {
+        .testimonial-card {
             background: white;
             padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        
-        .specialty-card:hover {
-            transform: translateY(-5px);
+            border-radius: 15px;
+            margin: 2rem auto;
+            max-width: 600px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         
         .cta-section {
@@ -62,44 +90,57 @@
             color: white;
             padding: 1rem 2rem;
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
             font-size: 1.2rem;
             cursor: pointer;
             transition: all 0.3s;
             text-decoration: none;
             display: inline-block;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
         }
         
         .cta-button:hover {
-            background: #c0392b;
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
         }
     </style>
 </head>
 <body>
     <div class="video-section">
         <div class="container">
-            <h2>Mi Historia en el Sector Inmobiliario</h2>
+            <h2>Descubre Mi Pasión por el Real Estate</h2>
             <div class="video-container">
-                <!-- Placeholder para el video -->
-                <img src="/api/placeholder/800/450" alt="Video presentación">
+                <!-- Placeholder para el video de Mafer -->
+                <img src="/api/placeholder/800/450" alt="Video presentación Mafer">
             </div>
         </div>
     </div>
     
-    <div class="container">
-        <div class="specialties">
-            <div class="specialty-card">
-                <h3>Fotografía Profesional</h3>
-                <p>Capturo la esencia de cada propiedad con fotos profesionales que destacan sus mejores características.</p>
+    <div class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="feature-card">
+                    <h3>Experiencia Certificada</h3>
+                    <p>Agente inmobiliaria certificada a nivel federal en México, especializada en propiedades residenciales y comerciales.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Conocimiento Local</h3>
+                    <p>Experta en el mercado del Bajío, especialmente en Irapuato y zonas aledañas, con conexiones en todo México.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Servicio Integral</h3>
+                    <p>Te acompaño en todo el proceso, desde la búsqueda hasta el cierre, asegurando una experiencia sin complicaciones.</p>
+                </div>
             </div>
-            <div class="specialty-card">
-                <h3>Asesoría Contable</h3>
-                <p>Te ayudo a entender los aspectos fiscales y financieros de tu inversión inmobiliaria.</p>
-            </div>
-            <div class="specialty-card">
-                <h3>Gestión Legal</h3>
-                <p>Manejo profesional de contratos y documentación con background en recursos humanos.</p>
+        </div>
+    </div>
+    
+    <div class="testimonials">
+        <div class="container">
+            <h2>Lo Que Dicen Mis Clientes</h2>
+            <div class="testimonial-card">
+                <p>"Mafer nos ayudó a encontrar nuestra casa ideal. Su atención al detalle y profesionalismo hicieron toda la diferencia."</p>
+                <strong>- Familia González</strong>
             </div>
         </div>
     </div>
@@ -108,8 +149,10 @@
         <div class="container">
             <h2>¿Listo para encontrar tu propiedad ideal?</h2>
             <p>Agenda una consulta personalizada conmigo</p>
-            <a href="captura.html" class="cta-button">Agendar Consulta</a>
+            <a href="captura.html" class="cta-button">Agendar Consulta Gratuita →</a>
         </div>
     </div>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </body>
 </html>
