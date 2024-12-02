@@ -3,158 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda tu Consulta con Mafer</title>
+    <title>Formulario de Consulta</title>
     <style>
-        :root {
-            --primary: #6B4E71;
-            --secondary: #FF69B4;
-            --accent: #4A90E2;
-            --light: #F5F5F5;
-            --dark: #2C3E50;
-        }
-        
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #a3c4d3; /* Azul suave */
+            color: #333333;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background: var(--light);
-        }
-        
-        .container {
-            max-width: 600px;
-            margin: 4rem auto;
-            padding: 2rem;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            position: relative;
-        }
-
-        /* Estilo para el botón de cierre */
-        .close-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: var(--dark);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            padding: 10px;
-            font-size: 1.2rem;
-            cursor: pointer;
-        }
-        
-        .close-button:hover {
-            background: var(--secondary);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--primary);
-            font-weight: 600;
-        }
-        
-        input, select, textarea {
-            width: 100%;
-            padding: 0.8rem;
-            border: 2px solid rgba(107, 78, 113, 0.2);
-            border-radius: 10px;
-            font-size: 1rem;
-            font-family: 'Montserrat', sans-serif;
-            transition: border-color 0.3s;
-        }
-        
-        input:focus, select:focus, textarea:focus {
-            outline: none;
-            border-color: var(--primary);
-        }
-        
-        .submit-button {
-            background: var(--secondary);
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 25px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            width: 100%;
-            transition: all 0.3s;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
-        }
-        
-        .submit-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
-        }
-
-        .privacy-notice {
-            font-size: 0.8rem;
-            color: #666;
             text-align: center;
-            margin-top: 1rem;
+        }
+        header {
+            background-color: #4c8c7d; /* Verde esmeralda */
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .form-container {
+            margin: 50px auto;
+            width: 60%;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .cta-button {
+            background-color: #f1c40f; /* Dorado */
+            padding: 15px 30px;
+            color: #ffffff;
+            font-size: 1.5em;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Botón de cierre -->
-        <button class="close-button" onclick="window.history.back()">X</button>
-        
-        <h2>Agenda tu Consulta Personalizada con Mafer</h2>
-        <form action="thanks.html" method="GET">
-            <div class="form-group">
-                <label for="nombre">Nombre Completo</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="telefono">WhatsApp</label>
-                <input type="tel" id="telefono" name="telefono" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="tipo-propiedad">¿Qué tipo de propiedad te interesa?</label>
-                <select id="tipo-propiedad" name="tipo-propiedad" required>
-                    <option value="">Selecciona una opción</option>
-                    <option value="casa">Casa Habitación</option>
-                    <option value="departamento">Departamento</option>
-                    <option value="terreno">Terreno</option>
-                    <option value="bodega">Bodega/Nave Industrial</option>
-                    <option value="inversion">Propiedad para Inversión</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="zona">Zona de Interés</label>
-                <select id="zona" name="zona" required>
-                    <option value="">Selecciona una opción</option>
-                    <option value="irapuato">Irapuato</option>
-                    <option value="guanajuato">Guanajuato Capital</option>
-                    <option value="leon">León</option>
-                    <option value="celaya">Celaya</option>
-                    <option value="otra">Otra Ciudad</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <button type="submit" class="submit-button">Enviar Consulta</button>
-            </div>
+
+<header>
+    <h1>¡Gracias por confiar en mi experiencia!</h1>
+</header>
+
+<section>
+    <h2>Rellena el siguiente formulario para solicitar una consulta personalizada.</h2>
+    <div class="form-container">
+        <form action="/submit-form" method="POST">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <textarea name="message" placeholder="Cuéntame un poco sobre lo que buscas" required></textarea>
+            <button type="submit" class="cta-button">Enviar solicitud</button>
         </form>
-        
-        <p class="privacy-notice">Tu privacidad es importante. No compartiremos tu información.</p>
     </div>
+</section>
+
 </body>
 </html>
